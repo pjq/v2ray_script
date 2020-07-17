@@ -31,10 +31,10 @@ start() {
     sh iptables-d.sh
     echo "sh iptables.sh"
     sh iptables.sh
-    for i in {1..10000}
+    for i in {1..100}
     do
         echo "${V2RAY_PATH}/v2ray --config v2ray_mirouter.json"
-        echo "Run v2ray ${DATE} " >> ${V2RAY_PATH_SCRIPT}/log
+        echo "Run v2ray ${DATE} " >> ${SCRIPT_PATH}/log
         ${V2RAY_PATH}/v2ray --config v2ray_mirouter.json
     done
 }

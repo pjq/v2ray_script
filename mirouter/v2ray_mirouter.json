@@ -32,7 +32,9 @@
     }
   ],
   "log": {
-    "loglevel": "warning"
+    "loglevel": "warning",
+     "access":"access.log",
+     "error":"error.log"
   },
   "outbounds": [
     {
