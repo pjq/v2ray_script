@@ -124,7 +124,14 @@
           "network":"tcp",
           "timeout":0,
           "followRedirect":true
-       } 
+       },
+       "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true
+      }
      }
   ]
 }
